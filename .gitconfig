@@ -1,0 +1,10 @@
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+[user]
+	name = Christian Razo
+	email = 37232875+Christian-Ra@users.noreply.github.com
+[core]
+	editor = \"C:\\Users\\chrra\\Programming\\Microsoft VS Code\\Code.exe\" --wait
