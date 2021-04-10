@@ -14,14 +14,26 @@
         }
     </style>
     <head>
-        <title>
-            My First Webpage
-        </title>
+        <meta charset ="UTF-8">
+        <meta name ="viewport" content ="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="HTML, CSS">
+        <meta name="description" content="A personal webpage for Christian Razo, a second year computer science student at the Illinois Institute of Technology">
+        <title>My First Webpage</title>
     </head>
+<script type="text/javascript" src="js/paper.js"></script>
+<!-- Define inlined PaperScript associate it with myCanvas -->
+<script type="text/paperscript" canvas="myCanvas">
+    var path = new Path();
+	path.strokeColor = 'black';
+	var start = new Point(100, 100);
+	path.moveTo(start);
+	path.lineTo(start + [ 100, -50 ]);
+</script>
         <body>
-            Hello, My name is Christian Razo. Welcome to my page!
-            <img class = "profile" src="images/Profile.jpg" alt="A picture of me"/>
-            <p class ="handle">@ChristianRazo4</p>
+            Hello, my name is Christian Razo. Welcome to my page!
+            <img class = "profile" src="images/Profile.jpg" alt="A picture of Christian Razo"/>
+            <p><a href="https://twitter.com/christianrazo4?lang=en"class ="handle">@ChristianRazo4</a></p>
             <p>I am a 2nd year computer science student at the Illinois Institute of Technology</p>
+            <canvas id="mycanvas" resize></canvas>
         </body>
 </html>
