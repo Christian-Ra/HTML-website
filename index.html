@@ -19,16 +19,10 @@
         <meta name="keywords" content="HTML, CSS">
         <meta name="description" content="A personal webpage for Christian Razo, a second year computer science student at the Illinois Institute of Technology">
         <title>My First Webpage</title>
-    </head>
-<script type="text/javascript" src="js/paper.js"></script>
+        <script type="text/javascript" src="paper/paper-full.min.js"></script>
 <!-- Define inlined PaperScript associate it with myCanvas -->
-<script type="text/paperscript" canvas="myCanvas">
-    var path = new Path();
-	path.strokeColor = 'black';
-	var start = new Point(100, 100);
-	path.moveTo(start);
-	path.lineTo(start + [ 100, -50 ]);
-</script>
+<script type="text/paperscript" src="myScript.js" canvas="myCanvas"></script>
+    </head>
         <body>
             Hello, my name is Christian Razo. Welcome to my page!
             <img class = "profile" src="images/Profile.jpg" alt="A picture of Christian Razo"/>
